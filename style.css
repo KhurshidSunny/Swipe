@@ -5,14 +5,14 @@
     --body-font: "Roboto", sans-serif;
     --heading-font: "Anek Telugu", sans-serif;
 
-    --h1-size: 94px;
-    --h1-height: 108px;
-    --h2-size: 50px;
-    --h2-height: 75px;
-    --h3-size: 40px;
-    --h4-size: 32px;
-    --h5-size: 28px;
-    --h6-size: 22px;
+    --h1-size: 82px;
+    --h1-height: 96px;
+    --h2-size: 36px;
+    --h2-height: 65px;
+    --h3-size: 28px;
+    --h4-size: 24px;
+    --h5-size: 18px;
+    --h6-size: 16px;
     --subtitle-size: 17px;
     --subtitle-height: 26px;
     --p-size: 18px;
@@ -128,6 +128,41 @@ a:hover{
     color: var(--primary-accent)
 }
 
+/* LAYOUT STYLES */
+
+.two-columns{
+    width: 100%;
+    display: flex;
+    align-items: flex-start;
+    justify-content: center;
+    flex-direction: row;
+    box-sizing: border-box;
+
+}
+
+.two-columns > .col-left{
+    width: 50%;
+    box-sizing: border-box;
+    padding: 0 var(--space-md) 0 0;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: start;
+ 
+
+}
+
+.two-columns > .col-right{
+    width: 50%;
+    box-sizing: border-box;
+    padding: 0  0 0 var(--space-md);
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: start;
+ 
+}
+
 .subtitle, .subtitle2{
     color: var(--purple-1);
     font-weight: 500;
@@ -145,6 +180,13 @@ a:hover{
     line-height: var(--secondary-text-height);
     color: var(---text-grey);
     letter-spacing: 0.25px;
+}
+
+.button-container{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 10px;
 }
 
 .primary-button{
@@ -165,7 +207,7 @@ a:hover{
     cursor: pointer;
 }
 
-.with-icon{
+.with-icon {
     display: flex;
     align-items: center;
     justify-content: center;
@@ -239,35 +281,34 @@ a:hover{
     max-width: 1000px;
 }
 
-.two-columns{
-    width: 100%;
-    display: flex;
-    align-items: flex-start;
-    justify-content: center;
-    flex-direction: row;
-    box-sizing: border-box;
+
+/* MAIN */
+
+main{
+    margin: var(--space-xl) 0;
+}
+
+/* HERO SECTION */
+
+.hero p {
+    max-width: 480px;
+}
+.button-container{
+    margin: var(--space-md) 0; 
+}
+
+.button-container button:nth-of-type(2){
+    color: var(--purple-2);
+}
+
+.hero .hero-phone-container{
+    height: 564px;
+    align-items: end;
+}
+
+.hero-phone{
+    height: 628px;
+    transform: translate(115px, -32px);
 
 }
 
-.two-columns > .col-left{
-    width: 50%;
-    box-sizing: border-box;
-    padding: 0 var(--space-md) 0 0;
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-    align-items: start;
- 
-
-}
-
-.two-columns > .col-right{
-    width: 50%;
-    box-sizing: border-box;
-    padding: 0  0 0 var(--space-md);
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-    align-items: start;
-    background-color: yellow;
-}
