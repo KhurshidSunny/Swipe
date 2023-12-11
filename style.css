@@ -19,6 +19,7 @@
     --p-height: 26px;
     --secondary-text-size: 14px;
     --secondary-text-height: 18px;
+    --button-size: 16px;
 
     /* SPACING  */
     --space-sm: 8px;
@@ -31,8 +32,10 @@
     --purple-2: #7000ff;
     --blue-1: #00d4ff;
     --primary-accent: #0a2540;
+    --primary-btn-hover: #6d7a88;
     --bg-white: #fff;
-    --bg-light: f7f9fc;
+    --bg-light: #f7f9fc;
+   
 }
 
 body{
@@ -135,4 +138,39 @@ a:hover{
     line-height: var(--secondary-text-height);
     color: var(---text-grey);
     letter-spacing: 0.25px;
+}
+
+.primary-button{
+    font-family: var(--body-font);
+    color: var(--bg-light);
+    background-color: var(--primary-accent);
+    font-size: var(--button-size);
+    letter-spacing: 1.25px;
+    border-radius: 20px;
+    border: none;
+    font-weight: bold;
+    padding: var(--space-sm) var(--space-md);
+    transition: all 0.15s ease;
+}
+
+.primary-button:hover{
+    background-color: var(--primary-btn-hover);
+    cursor: pointer;
+}
+
+.secondary-button{
+    font-family: var(--body-font);
+    color: var(--primary-accent);
+    font-size: var(--button-size);
+    background-color: transparent;
+    letter-spacing: 1.25px;
+    border: none;
+    font-weight: bold;
+    transition: all 0.15s ease;
+    
+}
+
+.secondary-button:hover{
+    opacity: 0.75;
+    cursor: pointer;
 }
