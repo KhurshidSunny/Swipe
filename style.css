@@ -21,6 +21,8 @@
     --secondary-text-height: 18px;
     --button-size: 16px;
 
+    --standard-width: 1144px;
+
     /* SPACING  */
     --space-sm: 8px;
     --space-md: 16px;
@@ -45,6 +47,11 @@ body{
     margin: 0;
     padding: var(--space-sm) 0 0 0;
     box-sizing: border-box;
+    background-color: lightblue;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
 
 }
 
@@ -158,6 +165,20 @@ a:hover{
     cursor: pointer;
 }
 
+.with-icon{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.with-icon > img{
+    transition: transform 0.25s ease;
+}
+
+.with-icon:hover > img{
+    transform: translate(4px);
+}
+
 .secondary-button{
     font-family: var(--body-font);
     color: var(--primary-accent);
@@ -166,11 +187,49 @@ a:hover{
     letter-spacing: 1.25px;
     border: none;
     font-weight: bold;
-    transition: all 0.15s ease;
-    
+    transition: all 0.15s ease; 
 }
 
 .secondary-button:hover{
     opacity: 0.75;
     cursor: pointer;
+}
+
+
+/* NAVBAR */
+
+.navbar{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    width: 100%;
+    max-width: var(--standard-width);
+    padding: 0 var(--space-md);
+}
+
+.menu{
+    display: inline;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    list-style-type: none;
+    
+}
+
+.menu a{
+    color: var(--bg-light);
+    margin: 0 var(--space-md);
+    font-weight: bold;
+
+}
+.menu a:hover{
+    text-decoration: underline;
+}
+
+.navbar-button{
+    background-color: rgba(250, 250, 250, 0.25);
+}
+
+.navbar-button:hover{
+    background-color: rgba(250, 250, 250, 0.5);
 }
