@@ -47,7 +47,7 @@ body{
     margin: 0;
     padding: var(--space-sm) 0 0 0;
     box-sizing: border-box;
-    background-color: lightblue;
+    background-color: var(--bg-white);
     display: flex;
     flex-direction: column;
     justify-content: center;
@@ -75,12 +75,10 @@ h1{
 
 h2{
     font-family: var(--heading-font);
-    font-weight: 500;
+    font-weight: 600;
     font-size: var(--h2-size);
     margin:0;
     width: 100%;
-    letter-spacing: -0.25px;
-    line-height: var(--h2-height);
 }
 
 h3{
@@ -310,5 +308,44 @@ main{
     height: 628px;
     transform: translate(115px, -32px);
 
+}
+
+/* PARTNERS SECTION */
+
+
+.partners-grid{
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr 1fr;
+    grid-template-rows: 1fr 1fr;
+    margin: var(--space-xl) 0;
+    column-gap: var(--space-md);
+    row-gap: var(--space-lg);
+  
+}
+
+.partners-grid img{
+    height: 60px;
+    place-self: center;
+}
+
+
+/* UNIFIED PLATFORM */
+
+.unified-platform-section {
+    padding: var(--space-xl) 0;
+}
+
+.unified-platform-section .primary-button{
+    background-color: var(--purple-1);
+    margin: var(--space-md) 0;
+}
+
+.unified-platform-section .primary-button:hover{
+    background-color: var(--primary-accent)
+}
+
+.unified-platform-section h2{
+    width: 50%;
+    margin-bottom: var(--space-md);
 }
 
