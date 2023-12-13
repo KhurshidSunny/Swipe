@@ -12,7 +12,7 @@
     --h3-size: 28px;
     --h4-size: 24px;
     --h5-size: 18px;
-    --h6-size: 16px;
+    --h6-size: 20px;
     --subtitle-size: 17px;
     --subtitle-height: 26px;
     --p-size: 18px;
@@ -389,4 +389,73 @@ main{
 }
 
 
+
+
+
+
+.card{
+    display: flex;
+    justify-content: flex-start;
+    align-items: flex-start;
+    flex-direction: column;
+    padding: var(--space-sm) var(--space-md) var(--space-sm) 0;
+}
+
+.card h3 {
+    font-family: var(--heading-font);
+    font-weight: 600;
+    font-size: var(--h6-size);
+    margin:0;
+    width: 100%;
+}
+
+.card .icon{
+    height: 50px;
+    margin: 0 0 var(--space-sm) 0;
+   
+}
+
+
+/* INTEGRATIONS */
+
+.integration-section {
+    color: var(--text-light);
+    background-color: var(--primary-accent);
+}
+
+.integration-section .card-container{
+    display: flex;
+    margin: var(--space-lg) 0;
+}
+
+.integration-section .primary-button{
+    background-color: var(--blue-1);
+    color: var(--primary-accent);
+    margin: var(--space-md) 0 0 0;
+}
+
+.integration-section .primary-button:hover{
+    background-color: var(--bg-white);
+    color: var(--text-dark);
+}
+
+.integration-section .secondary-button {
+    color: var(--blue-1)
+}
+
+
+.integration-section .card-section .card{
+    width: 50%;
+}
+
+#api-code {
+    max-width: 470px;
+    margin: 0 0 var(--space-md) 0;
+    border-radius: 20px;
+}
+
+#terminal-code {
+    max-width: 470px;
+    border-radius: 20px;
+}
 
