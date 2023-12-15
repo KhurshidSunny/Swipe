@@ -459,3 +459,21 @@ main{
     border-radius: 20px;
 }
 
+/* WHY SWIPE SECTION */
+.why-swipe-section .card-container{
+    display: flex;
+    margin: var(--space-lg) 0;
+ 
+    
+}
+
+.why-swipe-section .card-container .card{
+    width: 25%;
+    padding: 0 var(--space-md) 0 0;
+    margin: 0 var(--space-sm) 0 0;
+    box-sizing: border-box;
+ 
+}
+
+
+
