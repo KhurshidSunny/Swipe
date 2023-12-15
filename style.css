@@ -661,5 +661,46 @@ main{
 
 
 
+/* GETTING STARTED SECTION */
+.getting-started-section {
+    display: flex;
+    justify-content: center;
+    padding: var(--space-md) 0;
+    margin: var(--space-md) 0;
+}
+.getting-started-section .col-left .primary-button {
+    background-color: var(--purple-1);
+    margin: var(--space-md) 0; 
+}
+
+.getting-started-section .col-left .primary-button:hover {
+    background-color: var(--primary-accent);
+}
+
+.getting-started-section .col-right .card {
+    width: 50%;
+}
+
+.getting-started-section .col-right .card .card-icon {
+    width: 50px;
+    margin: 0 0 var(--space-md) 0;
+}
+
+.getting-started-section .col-right .card-container {
+    display: flex;
+    gap: var(--space-md);
+}
+
+.getting-started-section .col-right .secondary-button {
+    color: var(--purple-2);
+    margin-top: auto;
+}
+
+.getting-started-section .col-left {
+    padding: 0 var(--space-xl) 0 0; 
+}
+
+
+
 
 
