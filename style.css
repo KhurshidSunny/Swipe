@@ -285,9 +285,17 @@ a:hover{
 
 main{
     margin: var(--space-xl) 0;
+    width: 100%;
 }
 
 /* HERO SECTION */
+
+.hero{
+    width: 100%;
+    display: flex;
+    justify-content: center;
+
+}
 
 .hero p {
     max-width: 480px;
@@ -313,6 +321,13 @@ main{
 
 /* PARTNERS SECTION */
 
+.partners-section {
+    width: 100%;
+    display: flex;
+    justify-content: center;
+
+}
+
 
 .partners-grid{
     display: grid;
@@ -334,6 +349,9 @@ main{
 
 .unified-platform-section {
     padding: var(--space-xl) 0;
+    width: 100%;
+    display: flex;
+    justify-content: center;
 }
 
 .unified-platform-section .primary-button{
@@ -352,6 +370,12 @@ main{
 
 
 /* GRAPHIC SECTION */
+
+.graphic-section{
+    width: 100%;
+    display: flex;
+    justify-content: center;
+}
 
 .graphic-grid{
     display: grid;
@@ -421,6 +445,9 @@ main{
 .integration-section {
     color: var(--text-light);
     background-color: var(--primary-accent);
+    width: 100%;
+    display: flex;
+    justify-content: center;
 }
 
 .integration-section .card-container{
@@ -460,9 +487,15 @@ main{
 }
 
 /* WHY SWIPE SECTION */
+.why-swipe-section {
+    width: 100%;
+    display: flex;
+    justify-content: center;
+}
+
 .why-swipe-section .card-container{
     display: flex;
-    margin: var(--space-lg) 0;
+    margin: var(--space-lg) 0; 
  
     
 }
@@ -473,6 +506,61 @@ main{
     margin: 0 var(--space-sm) 0 0;
     box-sizing: border-box;
  
+}
+
+
+/* GLOBAL SECTION */
+.global-section{
+    background-color: var(--primary-accent);
+    width: 100%;
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    color: var(--bg-light);
+    position: relative;
+    padding: calc(var(--space-xl) * 3) 0
+}
+
+.global-section .two-columns .col-left .subtitle {
+    color: var(--blue-1)
+
+}
+
+.global-section a {
+    color: var(--blue-1);
+}
+.global-section a:hover{
+    color: var(--text-light)
+}
+
+.global-section .card-container {
+    display: flex;
+    margin: calc(var(--space-xl) * 2) 0;
+}
+
+
+.global-section .card-container .card{
+    width: 25%;
+    padding: 0 var(--space-sm) 0 0;
+    margin: 0 var(--space-sm) 0 0;
+    box-sizing: border-box;
+}
+
+.global-section .card-container .card h3{
+    border-left: 2px solid var(--blue-1);
+    width: 80px;
+    padding: 0 0 0 var(--space-sm)
+}
+
+
+#globe {
+    max-width: 600px;
+    opacity: 25%;
+    position: absolute;
+    top: 20%;
+    
+
+
 }
 
 
