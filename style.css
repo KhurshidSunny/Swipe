@@ -841,6 +841,58 @@ main{
 }
 
 
+/* MEDAI QUERIES */
+@media only screen and (max-width: 1144px){
+    .section-container {
+        padding: 0 var(--space-md);
+    }
+}
+
+@media only screen and (max-width: 850px) {
+    .partners-grid img {
+        width: 100%;
+        height: auto;
+    }
+}
+
+/* TABLET SIZE */
+@media only screen and (max-width: 768px){
+    :root {
+        --h1-size: 55px;
+        --h1-height: 62px;
+        --h2-size: 28px;
+    }
+
+    .unified-platform-section h2 {
+        width: 100%;
+    }
+
+}
+
+
+/* MOBILE SIZE */
+@media only screen and (max-width: 550px){
+  
+    /* GENERAL CHANGES */
+    .two-columns {
+        flex-direction: column;
+    }
+    .two-columns .col-left {
+        width: 100%;
+    }
+    .two-columns .col-right {
+        width: 100%;
+        padding: 0;
+    }
+
+      /* GRID PARTNERS */
+      .partners-grid {
+        grid-template-columns: 1fr 1fr;
+    }
+
+}
+
+
 
 
 
