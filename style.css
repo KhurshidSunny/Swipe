@@ -853,6 +853,16 @@ main{
         width: 100%;
         height: auto;
     }
+
+    /* integration section */
+    .integration-section .col-left {
+        width: 60%;
+    }
+
+    .integration-section .col-right {
+        width: 40%;
+    }
+
 }
 
 /* TABLET SIZE */
@@ -866,6 +876,50 @@ main{
     .unified-platform-section h2 {
         width: 100%;
     }
+
+      /* integration section */
+      .integration-section .card-container {
+        flex-direction: column;
+    }
+
+    .integration-section .card-container .card {
+        width: 100%;
+    }
+
+    /* why-swipe section */
+
+    .why-swipe-section .card-container {
+        flex-wrap: wrap;
+    }
+    .why-swipe-section .card-container .card {
+        width: 50%;
+        margin: var(--space-md) 0;
+    }
+
+    /* Global section */
+    .global-section .card-container  {
+        flex-wrap: wrap;
+        margin: var(--space-xl) 0;
+    }
+    .global-section .card-container .card {
+        width: 50%;
+        padding: 0;
+        margin: var(--space-md) 0;
+    }
+
+       /* Getting started section */
+
+       .getting-started-section .two-columns {
+        align-items: center ;
+       }
+       .getting-started-section .card-container {
+        flex-direction: column;
+    }
+    .getting-started-section .card-container .card {
+        width: 100%;
+       
+    }
+
 
 }
 
@@ -890,6 +944,76 @@ main{
         grid-template-columns: 1fr 1fr;
     }
 
+    /* integration section */
+    .integration-section .col-right {
+        display: none;
+    }
+
+     /* why-swipe section */
+
+     .why-swipe-section .card-container {
+        flex-direction: column;
+    }
+    .why-swipe-section .card-container .card {
+        width: 100%;
+        margin: var(--space-sm) 0;
+    }
+
+    why-swipe-section .card-container .card .icon {
+        height: 30px;
+    }
+
+  
+     /* Global section */
+    .global-section .card-container .card {
+        width: 100%;
+        margin: var(--space-sm) 0;
+    }
+
+   #globe {
+        opacity: 0.10;
+    }
+
+    /* VIRTUAL EVENTS SECTION */
+    .virtual-events-section .swipe-session-card {
+        width: 100%;
+        margin: var(--space-md) 0;  
+    }
+
+    .virtual-events-section .swipe-session-card .secondary-text {
+        width: 100%;
+    }
+
+    .virtual-events-section .swipe-session-card .card-top {
+        height: 40%;
+    }
+    #session-logo {
+        width: 300px;
+    }
+
+    .footer .footer-grid {
+        grid-template-columns: 1fr 1fr;
+    }
+
+    .footer .footer-grid .col a {
+        font-size: 12px;
+    }
+
+    #footer-logo {
+        width: 70px;
+    }
+
+    #link-icon {
+        width: 18px;
+    }
+
+}
+
+
+html, body {
+    width: 100%;
+    position: relative;
+    overflow-x: hidden;
 }
 
 
