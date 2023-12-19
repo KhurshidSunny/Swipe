@@ -336,7 +336,7 @@ main{
 
 .hero-phone{
     height: 628px;
-    transform: translate(115px, -32px);
+    transform: translate(32, -32px);
 
 }
 
@@ -846,6 +846,44 @@ main{
     .section-container {
         padding: 0 var(--space-md);
     }
+
+    :root {
+        --h1-size:70px;
+        --h1-height: 75px;
+    }
+
+    .hero-phone {
+        height: 550px;
+        transform: translateY(-60px);
+    }
+
+    .hero .col-left {
+        width: 60%;
+    }
+
+    .hero .col-right {
+        width: 40%;
+    }
+}
+
+@media only screen and (max-width: 1000px) {
+    /* :root {
+        --h1-size:70px;
+        --h1-height: 75px;
+    }
+
+    .hero-phone {
+        height: 550px;
+        transform: translateY(-60px);
+    }
+
+    .hero .col-left {
+        width: 60%;
+    }
+
+    .hero .col-right {
+        width: 40%;
+    } */
 }
 
 @media only screen and (max-width: 850px) {
@@ -863,18 +901,56 @@ main{
         width: 40%;
     }
 
+    .hero-phone {
+        transform: translateY(-85px);
+    }
+
 }
 
 /* TABLET SIZE */
 @media only screen and (max-width: 768px){
     :root {
-        --h1-size: 55px;
-        --h1-height: 62px;
+        --h1-size: 50px;
+        --h1-height: 60px;
         --h2-size: 28px;
     }
 
+       /* NAVBAR STYLES */
+       .navbar {
+        margin: 0;
+    }
+
+    /* hero section */
+    .hero .col-left {
+        width: 60%;
+    }
+
+    .hero .two-columns {
+        align-items: center;
+    }
+
+    .hero .col-right {
+        width: 40%;
+    }
+
+    .hero-phone {
+        height: 450px;
+        transform: translateX(32px);
+    }
+
+    /* integration section */
     .unified-platform-section h2 {
         width: 100%;
+    }
+
+ 
+
+    main {
+        margin: 0;
+    }
+
+    #gradient-canvas {
+        height: 820px;
     }
 
       /* integration section */
@@ -926,6 +1002,13 @@ main{
 
 /* MOBILE SIZE */
 @media only screen and (max-width: 550px){
+
+    :root {
+        --h1-size: 58px;
+        --h1-height: 65px;
+        --h2-size: 28px;
+        --h6-size: 16px;
+    }
   
     /* GENERAL CHANGES */
     .two-columns {
@@ -937,6 +1020,25 @@ main{
     .two-columns .col-right {
         width: 100%;
         padding: 0;
+    }
+
+    /* NAVBAR STYLES */
+    .navbar {
+        margin: 0 0 var(--space-md) 0;
+    }
+
+
+    /* HERO STYLES */
+    main {
+        margin: var(--space-lg) 0 0 0;
+    }
+
+    #gradient-canvas {
+        height: 820px;
+    }
+
+    .hero .hero-phone-container {
+        display: none;
     }
 
       /* GRID PARTNERS */
