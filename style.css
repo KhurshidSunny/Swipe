@@ -238,6 +238,11 @@ a:hover{
     cursor: pointer;
 }
 
+.section-container {
+    width: 100%;
+    max-width: 1000px;
+}
+
 
 /* NAVBAR */
 
@@ -249,6 +254,7 @@ a:hover{
     max-width: var(--standard-width);
     padding: 0 var(--space-md);
     margin: 0 0 var(--space-xl) 0;
+    box-sizing: border-box;
 }
 
 .menu{
@@ -278,10 +284,10 @@ a:hover{
     background-color: rgba(250, 250, 250, 0.5);
 }
 
-.section-container {
-    width: 100%;
-    max-width: 1000px;
+#menu-button {
+    display: none;
 }
+
 
 
 /* MAIN */
@@ -653,6 +659,7 @@ main{
 }
 
 
+
 .swipe-session-card {
     width: 540px;
     height: 446px;
@@ -866,25 +873,6 @@ main{
     }
 }
 
-@media only screen and (max-width: 1000px) {
-    /* :root {
-        --h1-size:70px;
-        --h1-height: 75px;
-    }
-
-    .hero-phone {
-        height: 550px;
-        transform: translateY(-60px);
-    }
-
-    .hero .col-left {
-        width: 60%;
-    }
-
-    .hero .col-right {
-        width: 40%;
-    } */
-}
 
 @media only screen and (max-width: 850px) {
     .partners-grid img {
@@ -917,8 +905,33 @@ main{
 
        /* NAVBAR STYLES */
        .navbar {
-        margin: 0;
+        margin: var(--space-sm) 0 var(--space-md) 0;
     }
+    .navbar .menu {
+        display: none;
+    }
+
+    .navbar .navbar-button {
+        display: none;
+    }
+
+    .menu-button-container {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        padding: var(--space-sm) var(--space-md);
+        background-color: rgba(250, 250, 250, 0.25);
+        border-radius: 20px;
+        width: 50px;
+        height: 30px;
+    }
+
+    #menu-button {
+        display: block;
+        color: var(--bg-white);
+        font-size: 30px;
+    }
+
 
     /* hero section */
     .hero .col-left {
@@ -953,7 +966,12 @@ main{
         height: 820px;
     }
 
-      /* integration section */
+      /* INTEGRATION SECTION */
+      .integration-section {
+        padding: var(--space-xl) 0 0 0;
+      }
+
+
       .integration-section .card-container {
         flex-direction: column;
     }
@@ -962,7 +980,10 @@ main{
         width: 100%;
     }
 
-    /* why-swipe section */
+    /* WHY-SWIPE SECTION */
+    .why-swipe-section {
+        padding: calc(calc(var(--space-xl) * 3) + 20px) 0 var(--space-xl) 0;
+    }
 
     .why-swipe-section .card-container {
         flex-wrap: wrap;
@@ -972,7 +993,10 @@ main{
         margin: var(--space-md) 0;
     }
 
-    /* Global section */
+    /* GLOBAL SECTION */
+    .global-section {
+        padding: var(--space-xl)  0;
+    }
     .global-section .card-container  {
         flex-wrap: wrap;
         margin: var(--space-xl) 0;
@@ -983,7 +1007,12 @@ main{
         margin: var(--space-md) 0;
     }
 
-       /* Getting started section */
+    /* VIRTAUL-EVENTS SECTION */
+    .virtual-events-section {
+        padding: var(--space-xl);
+    }
+
+       /* GETTING STARTED SECTION */
 
        .getting-started-section .two-columns {
         align-items: center ;
@@ -1046,12 +1075,29 @@ main{
         grid-template-columns: 1fr 1fr;
     }
 
-    /* integration section */
+    /* UNIFIED PLATFORM SECTION */
+    .unified-platform-section {
+        padding: var(--space-md) 0;
+    }
+
+    /* INTEGRATION SECTION */
+
+    .integration-section {
+        padding: var(--space-lg) 0;
+    }
+
+    .integration-section::before {
+        height: 900px;
+    }
     .integration-section .col-right {
         display: none;
     }
 
      /* why-swipe section */
+
+     .why-swipe-section {
+        padding:  var(--space-xl) 0 var(--space-md) 0;
+     }
 
      .why-swipe-section .card-container {
         flex-direction: column;
@@ -1067,6 +1113,10 @@ main{
 
   
      /* Global section */
+
+     .global-section {
+        padding: var(--space-xl) 0 0 0;
+     }
     .global-section .card-container .card {
         width: 100%;
         margin: var(--space-sm) 0;
@@ -1077,6 +1127,11 @@ main{
     }
 
     /* VIRTUAL EVENTS SECTION */
+
+    .virtual-events-section {
+        padding: 0;
+    }
+
     .virtual-events-section .swipe-session-card {
         width: 100%;
         margin: var(--space-md) 0;  
@@ -1091,6 +1146,11 @@ main{
     }
     #session-logo {
         width: 300px;
+    }
+
+    /* GETTING STARTED SECTION */
+    .getting-started-section {
+        padding: var(--space-md) 0;
     }
 
     .footer .footer-grid {
